@@ -49,6 +49,12 @@ func TestSimple(t *testing.T) {
 	})
 }
 
+func TestSimple2(t *testing.T) {
+	t.Run("simple2", func(tt *testing.T) {
+		t.Errorf("Simple2")
+	})
+}
+
 func TestComplex(t *testing.T) {
 	d := t.Run
 
